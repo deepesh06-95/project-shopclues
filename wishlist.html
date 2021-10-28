@@ -23,8 +23,8 @@
         border: 2px solid #24A3B5;
     }
     img{
-            width:60%;
-            height:35%;
+            width:150px;
+            height:150px;
             margin: auto;
         }
         #homebtn{
@@ -36,6 +36,10 @@
             width:180px;
             padding:1%;
             border-radius: 5px;            
+        }
+        #containData > div >button{
+            padding: 4px;
+            border: none;
         }
     body{
         background-color: skyblue;
@@ -109,9 +113,10 @@ function addToCrt(p){
     if(check){
         p.count=1;
         product_cart.push(p);
+        alert("Added to the Cart");
     }
     else
-    alert("Already Added to the Cart");
+    alert("Added to the Cart");
     localStorage.setItem("cart",JSON.stringify(product_cart));
 }
 
